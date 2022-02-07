@@ -8,7 +8,7 @@ React - Redux Project
 > Read a random math-related quote.
 
 ![screenshot](./react-screenshot-01.png)
-![screenshot](./react-screenshot-02.png)
+![screenshot](./react-screenshot-03.png)
 
 ## Live Demo
 
