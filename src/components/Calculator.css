@@ -1,0 +1,89 @@
+button {
+  border: none;
+}
+
+.container {
+  font-size: 1.5em;
+  background: #d1d1d1;
+  width: 36rem;
+  height: 28rem;
+  padding: 0.125rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 2px 2px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "result result result result"
+    "btn-clear btn-toogle-sign btn-percentage btn-divider"
+    "btn-seven btn-eight btn-nine btn-multiply"
+    "btn-four btn-five btn-six btn-substract"
+    "btn-one btn-two btn-three btn-plus"
+    "btn-zero btn-zero btn-dot btn-equal";
+}
+
+.result {
+  background: #858694;
+  grid-area: result;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  font-size: 2em;
+  padding: 0.3rem;
+}
+
+.btn-light {
+  background: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-accent {
+  background: #f5913e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-zero {
+  grid-area: btn-zero;
+}
+
+.btn-dot { grid-area: btn-dot; }
+
+.btn-equal { grid-area: btn-equal; }
+
+.btn-clear { grid-area: btn-clear; }
+
+.btn-toogle-sign { grid-area: btn-toogle-sign; }
+
+.btn-percentage { grid-area: btn-percentage; }
+
+.btn-divider { grid-area: btn-divider; }
+
+.btn-multiply { grid-area: btn-multiply; }
+
+.btn-substract { grid-area: btn-substract; }
+
+.btn-plus { grid-area: btn-plus; }
+
+.btn-one { grid-area: btn-one; }
+
+.btn-two { grid-area: btn-two; }
+
+.btn-three { grid-area: btn-three; }
+
+.btn-four { grid-area: btn-four; }
+
+.btn-five { grid-area: btn-five; }
+
+.btn-six { grid-area: btn-six; }
+
+.btn-seven { grid-area: btn-seven; }
+
+.btn-eight { grid-area: btn-eight; }
+
+.btn-nine { grid-area: btn-nine; }
