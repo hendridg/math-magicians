@@ -95,5 +95,15 @@ Feel free to check the [issues page](https://github.com/hendridg/capstone-javasc
 
 Give a ⭐️ if you like this project!
 
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
+
 
 
