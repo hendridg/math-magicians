@@ -1,63 +1,51 @@
 import React, { Component } from 'react';
 import './Calculator.css';
+import calculate from '../logic/calculate';
+import Button from './Button';
 
 export default class Calculator extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      operator1: '',
-      result: '0',
+      total: '0',
+      next: null,
+      operation: null,
     };
-    this.btnOnClickOperator = this.btnOnClickOperator.bind(this);
     this.btnOnClick = this.btnOnClick.bind(this);
-    this.btnOnClickResult = this.btnOnClickResult.bind(this);
   }
 
-  btnOnClickOperator({ target }) {
-    this.setState((prevState) => ({
-      operator1: prevState.operator1.concat(target.textContent),
-      result: prevState.operator1.concat(target.textContent),
-    }));
-  }
-
-  btnOnClick({ target }) {
-    this.setState(() => ({
-      operator1: target.textContent,
-    }));
-  }
-
-  btnOnClickResult() {
-    this.setState((prevState) => ({
-      result: prevState.operator1 * 2,
-    }));
+  btnOnClick(buttonName) {
+    this.setState((prevState) => (calculate(prevState, buttonName)));
   }
 
   render() {
-    const { result } = this.state;
+    const { total, next, operation } = this.state;
     return (
       <div className="container">
         <div className="result">
-          {result}
+          { total || '' }
+          { operation || '' }
+          { next || '' }
         </div>
-        <button type="button" onClick={this.btnOnClickOperator} className="btn-light btn-zero">0</button>
-        <button type="button" onClick={this.btnOnClickOperator} className="btn-light btn-dot">.</button>
-        <button type="button" onClick={this.btnOnClickResult} className="btn-accent btn-equal">=</button>
-        <button type="button" onClick={this.btnOnClick} className="btn-light btn-clear">AC</button>
-        <button type="button" onClick={this.btnOnClick} className="btn-light btn-toogle-sign">+/-</button>
-        <button type="button" onClick={this.btnOnClick} className="btn-light btn-percentage">%</button>
-        <button type="button" onClick={this.btnOnClick} className="btn-accent btn-divider">/</button>
-        <button type="button" onClick={this.btnOnClick} className="btn-accent btn-multiply">*</button>
-        <button type="button" onClick={this.btnOnClick} className="btn-accent btn-substract">-</button>
-        <button type="button" onClick={this.btnOnClick} className="btn-accent btn-plus">+</button>
-        <button type="button" onClick={this.btnOnClickOperator} className="btn-light btn-one">1</button>
-        <button type="button" onClick={this.btnOnClickOperator} className="btn-light btn-two">2</button>
-        <button type="button" onClick={this.btnOnClickOperator} className="btn-light btn-three">3</button>
-        <button type="button" onClick={this.btnOnClickOperator} className="btn-light btn-four">4</button>
-        <button type="button" onClick={this.btnOnClickOperator} className="btn-light btn-five">5</button>
-        <button type="button" onClick={this.btnOnClickOperator} className="btn-light btn-six">6</button>
-        <button type="button" onClick={this.btnOnClickOperator} className="btn-light btn-seven">7</button>
-        <button type="button" onClick={this.btnOnClickOperator} className="btn-light btn-eight">8</button>
-        <button type="button" onClick={this.btnOnClickOperator} className="btn-light btn-nine">9</button>
+        <Button typeBtn="0" btnOnClick={this.btnOnClick} btnClass="btn-light btn-zero" />
+        <Button typeBtn="." btnOnclick={this.btnOnClick} btnClass="btn-light btn-dot" />
+        <Button typeBtn="=" btnOnClick={this.btnOnClick} btnClass="btn-accent btn-equal" />
+        <Button typeBtn="AC" btnOnClick={this.btnOnClick} btnClass="btn-light btn-clear" />
+        <Button typeBtn="+/-" btnOnClick={this.btnOnClick} btnClass="btn-light btn-toogle-sign" />
+        <Button typeBtn="%" btnOnClick={this.btnOnClick} btnClass="btn-light btn-percentage" />
+        <Button typeBtn="/" btnOnClick={this.btnOnClick} btnClass="btn-accent btn-divider" />
+        <Button typeBtn="x" btnOnClick={this.btnOnClick} btnClass="btn-accent btn-multiply" />
+        <Button typeBtn="-" btnOnClick={this.btnOnClick} btnClass="btn-accent btn-substract" />
+        <Button typeBtn="+" btnOnClick={this.btnOnClick} btnClass="btn-accent btn-plus" />
+        <Button typeBtn="1" btnOnClick={this.btnOnClick} btnClass="btn-light btn-one" />
+        <Button typeBtn="2" btnOnClick={this.btnOnClick} btnClass="btn-light btn-two" />
+        <Button typeBtn="3" btnOnClick={this.btnOnClick} btnClass="btn-light btn-three" />
+        <Button typeBtn="4" btnOnClick={this.btnOnClick} btnClass="btn-light btn-four" />
+        <Button typeBtn="5" btnOnClick={this.btnOnClick} btnClass="btn-light btn-five" />
+        <Button typeBtn="6" btnOnClick={this.btnOnClick} btnClass="btn-light btn-six" />
+        <Button typeBtn="7" btnOnClick={this.btnOnClick} btnClass="btn-light btn-seven" />
+        <Button typeBtn="8" btnOnClick={this.btnOnClick} btnClass="btn-light btn-eight" />
+        <Button typeBtn="9" btnOnClick={this.btnOnClick} btnClass="btn-light btn-nine" />
       </div>
     );
   }
