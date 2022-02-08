@@ -3,7 +3,7 @@ import './Calculator.css';
 import calculate from '../logic/calculate';
 import Button from './Button';
 
-function Calculator() {
+const Calculator = () => {
   const [objState, setObjState] = useState({});
 
   useEffect(() => {
@@ -46,6 +46,6 @@ function Calculator() {
       <Button typeBtn="9" btnOnClick={btnOnClick} btnClass="btn-light btn-nine" />
     </div>
   );
-}
+};
 
 export default Calculator;
