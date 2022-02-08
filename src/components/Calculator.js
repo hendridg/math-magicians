@@ -6,7 +6,7 @@ export default class Calculator extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      total: null,
+      total: '0',
       next: null,
       operation: null,
     };
@@ -14,11 +14,7 @@ export default class Calculator extends Component {
   }
 
   btnOnClick({ target }) {
-    this.setState((prevState) => ({
-      total: calculate(prevState, target.textContent).total,
-      next: calculate(prevState, target.textContent).next,
-      operation: calculate(prevState, target.textContent).operation,
-    }));
+    this.setState((prevState) => (calculate(prevState, target.textContent)));
   }
 
   render() {
@@ -27,8 +23,8 @@ export default class Calculator extends Component {
       <div className="container">
         <div className="result">
           { total || '' }
-          {operation || '' }
-          {next || ''}
+          { operation || '' }
+          { next || '' }
         </div>
         <button type="button" onClick={this.btnOnClick} className="btn-light btn-zero">0</button>
         <button type="button" onClick={this.btnOnClick} className="btn-light btn-dot">.</button>
