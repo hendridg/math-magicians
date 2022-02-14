@@ -15,7 +15,8 @@ const Calculator = () => {
   }, []);
 
   const btnOnClick = (buttonName) => {
-    setObjState(calculate(objState, buttonName));
+    const { total, next, operation } = calculate(objState, buttonName);
+    setObjState({ total, next, operation });
   };
 
   return (
@@ -26,7 +27,6 @@ const Calculator = () => {
         { objState.next || '' }
       </div>
       <Button typeBtn="0" btnOnClick={btnOnClick} btnClass="btn-light btn-zero" />
-      <Button typeBtn="." btnOnclick={btnOnClick} btnClass="btn-light btn-dot" />
       <Button typeBtn="=" btnOnClick={btnOnClick} btnClass="btn-accent btn-equal" />
       <Button typeBtn="AC" btnOnClick={btnOnClick} btnClass="btn-light btn-clear" />
       <Button typeBtn="+/-" btnOnClick={btnOnClick} btnClass="btn-light btn-toogle-sign" />
@@ -44,6 +44,7 @@ const Calculator = () => {
       <Button typeBtn="7" btnOnClick={btnOnClick} btnClass="btn-light btn-seven" />
       <Button typeBtn="8" btnOnClick={btnOnClick} btnClass="btn-light btn-eight" />
       <Button typeBtn="9" btnOnClick={btnOnClick} btnClass="btn-light btn-nine" />
+      <Button typeBtn="." btnOnClick={btnOnClick} btnClass="btn-light btn-dot" />
     </div>
   );
 };
