@@ -7,8 +7,9 @@ React - Redux Project
 > Make simple calculations.
 > Read a random math-related quote.
 
-![screenshot](./react-screenshot-01.png)
 ![screenshot](./react-screenshot-03.png)
+![screenshot](./react-screenshot-02.png)
+![screenshot](./react-screenshot-01.png)
 
 ## Live Demo
 
@@ -17,8 +18,8 @@ React - Redux Project
 ## Built With
 
 - React
-- Redux 
-- CSS 
+- Redux
+- CSS
 
 ## Getting Started
 
@@ -36,7 +37,7 @@ React - Redux Project
 
 ### Setup
 
-* Clone the repository in order to get a copy of this project
+- Clone the repository in order to get a copy of this project
 
 Open a terminal or a git bash in the desired directory and run `https://github.com/hendridg/math-magicians.git`
 
@@ -104,6 +105,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
-
-
-
