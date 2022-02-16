@@ -4,7 +4,14 @@ import Button from '../Button';
 
 it('renders correctly', () => {
   const tree = renderer
-    .create(<Button typeBtn="AC" btnOnClick={() => {}} primary btnClass="btn-clear" />)
+    .create(
+      <Button
+        typeBtn="AC"
+        btnOnClick={() => {}}
+        primary
+        btnClass="btn-clear"
+      />,
+    )
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

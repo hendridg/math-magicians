@@ -1,5 +1,176 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Test render Calculator component renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "flex-start",
+      "display": "flex",
+      "flexDirection": "row",
+      "justifyContent": "space-around",
+      "margin": "0 auto",
+      "width": "56rem",
+    }
+  }
+>
+  <h1
+    style={
+      Object {
+        "color": "darkGray",
+        "margin": "0",
+      }
+    }
+  >
+    Lets do some Math
+  </h1>
+  <div
+    className="container"
+  >
+    <div
+      className="result"
+      data-testid="result-id"
+    >
+      
+      
+      
+    </div>
+    <button
+      className="sc-bdvvtL kVsdI btn-zero"
+      onClick={[Function]}
+      type="button"
+    >
+      0
+    </button>
+    <button
+      className="sc-bdvvtL fCuBzI btn-equal"
+      onClick={[Function]}
+      type="button"
+    >
+      =
+    </button>
+    <button
+      className="sc-bdvvtL kVsdI btn-clear"
+      onClick={[Function]}
+      type="button"
+    >
+      AC
+    </button>
+    <button
+      className="sc-bdvvtL kVsdI btn-toogle-sign"
+      onClick={[Function]}
+      type="button"
+    >
+      +/-
+    </button>
+    <button
+      className="sc-bdvvtL kVsdI btn-percentage"
+      onClick={[Function]}
+      type="button"
+    >
+      %
+    </button>
+    <button
+      className="sc-bdvvtL fCuBzI btn-divider"
+      onClick={[Function]}
+      type="button"
+    >
+      /
+    </button>
+    <button
+      className="sc-bdvvtL fCuBzI btn-multiply"
+      onClick={[Function]}
+      type="button"
+    >
+      x
+    </button>
+    <button
+      className="sc-bdvvtL fCuBzI btn-substract"
+      onClick={[Function]}
+      type="button"
+    >
+      -
+    </button>
+    <button
+      className="sc-bdvvtL fCuBzI btn-plus"
+      onClick={[Function]}
+      type="button"
+    >
+      +
+    </button>
+    <button
+      className="sc-bdvvtL kVsdI btn-one"
+      onClick={[Function]}
+      type="button"
+    >
+      1
+    </button>
+    <button
+      className="sc-bdvvtL kVsdI btn-two"
+      onClick={[Function]}
+      type="button"
+    >
+      2
+    </button>
+    <button
+      className="sc-bdvvtL kVsdI btn-three"
+      onClick={[Function]}
+      type="button"
+    >
+      3
+    </button>
+    <button
+      className="sc-bdvvtL kVsdI btn-four"
+      onClick={[Function]}
+      type="button"
+    >
+      4
+    </button>
+    <button
+      className="sc-bdvvtL kVsdI btn-five"
+      onClick={[Function]}
+      type="button"
+    >
+      5
+    </button>
+    <button
+      className="sc-bdvvtL kVsdI btn-six"
+      onClick={[Function]}
+      type="button"
+    >
+      6
+    </button>
+    <button
+      className="sc-bdvvtL kVsdI btn-seven"
+      onClick={[Function]}
+      type="button"
+    >
+      7
+    </button>
+    <button
+      className="sc-bdvvtL kVsdI btn-eight"
+      onClick={[Function]}
+      type="button"
+    >
+      8
+    </button>
+    <button
+      className="sc-bdvvtL kVsdI btn-nine"
+      onClick={[Function]}
+      type="button"
+    >
+      9
+    </button>
+    <button
+      className="sc-bdvvtL kVsdI btn-dot"
+      onClick={[Function]}
+      type="button"
+    >
+      .
+    </button>
+  </div>
+</div>
+`;
+
 exports[`renders correctly 1`] = `
 <div
   style={
@@ -28,6 +199,7 @@ exports[`renders correctly 1`] = `
   >
     <div
       className="result"
+      data-testid="result-id"
     >
       
       
