@@ -11,10 +11,6 @@ React - Redux Project
 ![screenshot](./react-screenshot-02.png)
 ![screenshot](./react-screenshot-01.png)
 
-## Live Demo
-
-[Live Demo Link](https://hendridg.github.io/capstone-javascript/)
-
 ## Built With
 
 - React
