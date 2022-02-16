@@ -32,7 +32,7 @@ const Calculator = () => {
     >
       <h1 style={{ color: 'darkGray', margin: '0' }}>Lets do some Math</h1>
       <div className="container">
-        <div className="result">
+        <div className="result" data-testid="result-id">
           {objState.total || ''}
           {objState.operation || ''}
           {objState.next || ''}
