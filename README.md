@@ -11,6 +11,11 @@ React - Redux Project
 ![screenshot](./react-screenshot-02.png)
 ![screenshot](./react-screenshot-01.png)
 
+## Live Demo
+
+[Live Demo Link Netlify](https://sharp-euclid-c169ce.netlify.app/)
+[Live Demo Link GitHub pages](https://hendridg.github.io/math-magicians/)
+
 ## Built With
 
 - React
